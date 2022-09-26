@@ -60,15 +60,15 @@ section img {
 }
 
 h1 {
-    font-size: __px;
-    padding-top: __px;
-    padding-bottom: __px;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 h2 {
-    font-size: __px;
+    font-size: 25px;
 }
 
 section p {
-    font-size: __px;
+    font-size: 15px;
 }
