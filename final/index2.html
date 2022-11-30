@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <title> Abraham's Final Project</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <a href="index2.html"> <img src="imgs/menu.png" class="menu-img"></a>
+                <a href="index2.html"> <img href="index2.html" src="imgs/logo2.png" class="logo"> </a>
+                <ul>
+                    <li><a href="index3.html">My Collection</a></li>
+                    <li id="record"> Record of the Week &#8594;</li>
+                </ul>
+                <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+            </nav>
+
+            <div class="lamp-container">
+                <img src="imgs/lamp.png" class="lamp">
+                <img src="imgs/vinyl1.png" class="vinyl1" id="vinyl1">
+                <img src="imgs/light.png" class="light" id="light">
+                <h4 class="vinyl-title" id="under">Joji - Simthereens</h4>
+            </div>
+
+            <div class="text-container">
+                <h1> Show Off Your Records!</h1>
+                <p id="paragraph"> Add to your collection and show everyone what you're listening to!</p>
+                <a href="index3.html" id="green-button"> My Collection </a>
+            </div>
+
+        </div>
+
+        <script>
+            var btn = document.getElementById("btn");
+            var light = document.getElementById("light");
+            var vinyl = document.getElementById("vinyl1");
+            var title = document.getElementById("under");
+
+            function toggleBtn(){
+                btn.classList.toggle("active");
+                light.classList.toggle("on");
+                vinyl.classList.toggle("show");
+                title.classList.toggle("show2");
+            }
+
+        </script>
+    </body>
+</html>

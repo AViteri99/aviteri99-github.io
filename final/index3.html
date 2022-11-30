@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <title> Abraham's Final Project</title>
+        <link rel="stylesheet" href="style/style2.css">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <a href="index2.html"> <img src="imgs/menu.png" class="menu-img"></a>
+                <a href="index2.html"> <img href="index2.html" src="imgs/logo2.png" class="logo"> </a>
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <div class="header">
+                    <p id="collection"><strong>Abraham's Collection</strong></p>
+                </div>
+                <div class="content-large">
+                    <p id="library">Library</p>
+                    <div class="container2">
+                        <div class="header2">
+                            <img src="imgs/InTongues Cover.png" class="library-vinyl" id="InTongues" onclick="changeImage2()">
+                            <p id="library-title">In Tongues EP</p>
+                            <p id="library-artist">Joji &#x2713;</p>
+                        </div>
+                        <div class="header2">
+                            <img src="imgs/HS1 Cover.png" class="library-vinyl" id="HS1" onclick="changeImage1()">
+                            <p id="library-title">Harry Styles</p>
+                            <p id="library-artist">Harry Styles &#x2713;</p>
+                        </div>
+                        <div class="header2">
+                            <img src="imgs/HarrysHouse Cover.png" class="library-vinyl" id="HarrysHouse" onclick="changeImage3()">
+                            <p id="library-title">Harry's House</p>
+                            <p id="library-artist">Harry Styles &#x2713;</p>
+                        </div>
+                        <div class="header2">
+                            <img src="imgs/AfterHours Cover.png" class="library-vinyl" id="AfterHours" onclick="changeImage4()">
+                            <p id="library-title">After Hours</p>
+                            <p id="library-artist">The Weeknd &#x2713;</p>
+                        </div>
+                        <div class="header2">
+                            <img src="imgs/Stoney Cover.png" class="library-vinyl" id="Stoney" onclick="changeImage5()">
+                            <p id="library-title">Stoney</p>
+                            <p id="library-artist">Post Malone &#x2713;</p>
+                        </div>
+                        <div class="header2">
+                            <img src="imgs/Freudian Cover.png" class="library-vinyl" id="Freudian" onclick="changeImage6()">
+                            <p id="library-title">Freudian</p>
+                            <p id="library-artist">Daniel Ceasar &#x2713;</p>
+                        </div>
+                        <div class="header2">
+                            <img src="imgs/SDITD Cover.png" class="library-vinyl" id="SlowDIND" onclick="changeImage7()">
+                            <p id="library-title">Slow Dancing in the Dark</p>
+                            <p id="library-artist">Joji &#x2713;</p>
+                        </div>
+                        <div class="header2">
+                            <img src="imgs/Blond Cover.png" class="library-vinyl" id="Blond" onclick="changeImage8()">
+                            <p id="library-title">Blond</p>
+                            <p id="library-artist">Frank Ocean</p>
+                        </div>
+                        <div class="header2">
+                            <img src="imgs/4 Cover.png" class="library-vinyl" id="jcole" onclick="changeImage9()">
+                            <p id="library-title">4 Your Eyez Only</p>
+                            <p id="library-artist">J Cole</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content-small">
+                    <p>Favorite Record</p>
+                    <img src="imgs/vinyl1.png" class="vinyl1" id="vinyl1">
+                    <p id="title">Joji - Simthereens</p>
+                    <audio controls autoplay>
+                        <source src="music/joji.mp3" type="audio/mpeg">
+                    </audio>
+
+                </div>
+                <div class="content-small">
+                    <p>My Turntable</p>
+                    <img src="imgs/Screenshot 2022-11-29 at 5.59.51 PM.png" class="vinyl1" id="turntable">
+                    <p id="title">Audio-Technica AT-LP60XBT</p>
+                </div>
+                <div class="footer" id="footer2">Records marked &#x2713; have been authenticated!</div>
+
+            </div>
+        </div>
+        <script>
+            var HS1 = 0;
+            function changeImage1(){
+                if (HS1 == 0) {
+                    document.getElementById("HS1").src = "imgs/HS1 Vinyl.png"
+                    HS1 = HS1 + 1
+                } else {
+                    document.getElementById("HS1").src = "imgs/HS1 Cover.png"
+                    HS1 = 0
+                }
+            }
+            var IT = 0;
+            function changeImage2(){
+                if (IT == 0) {
+                    document.getElementById("InTongues").src = "imgs/InTongues Vinyl.png"
+                    IT = IT + 1
+                } else {
+                    document.getElementById("InTongues").src = "imgs/InTongues Cover.png"
+                    IT = 0
+                }
+            }
+            var HH = 0;
+            function changeImage3(){
+                if (HH == 0) {
+                    document.getElementById("HarrysHouse").src = "imgs/HarrysHouse Vinyl.png"
+                    HH = HH + 1
+                } else {
+                    document.getElementById("HarrysHouse").src = "imgs/HarrysHouse Cover.png"
+                    HH = 0
+                }
+            }
+            var AH = 0;
+            function changeImage4(){
+                if (AH == 0) {
+                    document.getElementById("AfterHours").src = "imgs/AfterHours Vinyl.png"
+                    AH = AH + 1
+                } else {
+                    document.getElementById("AfterHours").src = "imgs/AfterHours Cover.png"
+                    AH = 0
+                }
+            }
+            var ST = 0;
+            function changeImage5(){
+                if (ST == 0) {
+                    document.getElementById("Stoney").src = "imgs/Stoney Vinyl.png"
+                    ST = ST + 1
+                } else {
+                    document.getElementById("Stoney").src = "imgs/Stoney Cover.png"
+                    ST = 0
+                }
+            }
+            var FR = 0;
+            function changeImage6(){
+                if (FR == 0) {
+                    document.getElementById("Freudian").src = "imgs/Freudian Vinyl.png"
+                    FR = FR + 1
+                } else {
+                    document.getElementById("Freudian").src = "imgs/Freudian Cover.png"
+                    FR = 0
+                }
+            }
+            var SD = 0;
+            function changeImage7(){
+                if (SD == 0) {
+                    document.getElementById("SlowDIND").src = "imgs/SDITD Vinyl.png"
+                    SD = SD + 1
+                } else {
+                    document.getElementById("SlowDIND").src = "imgs/SDITD Cover.png"
+                    SD = 0
+                }
+            }
+            var FO = 0;
+            function changeImage8(){
+                if (FO == 0) {
+                    document.getElementById("Blond").src = "imgs/Blond Vinyl.png"
+                    FO = FO + 1
+                } else {
+                    document.getElementById("Blond").src = "imgs/Blond Cover.png"
+                    FO = 0
+                }
+            }
+            var JC = 0;
+            function changeImage9(){
+                if (JC == 0) {
+                    document.getElementById("jcole").src = "imgs/4 Vinyl.png"
+                    JC = JC + 1
+                } else {
+                    document.getElementById("jcole").src = "imgs/4 Cover.png"
+                    JC = 0
+                }
+            }
+        </script>
+    </body>
+</html>

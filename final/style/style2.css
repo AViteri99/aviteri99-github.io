@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: box-border;
+}
+
+.hero {
+    background: #425376;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+
+}
+
+nav ul li:hover {
+    opacity: 0.75;
+    transition: text-decoration 300ms;
+    text-decoration: underline 0.15em rgba(250, 250, 250, 0);
+    text-underline-offset: 8px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+    margin-bottom: 30px;
+}
+
+nav .menu-img {
+    width: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav .logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.container {
+    width: 80vh;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 1fr 1fr 40px;
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+    margin: auto;
+    background-color: rgb(32, 35, 47);
+    border-radius: 5px;
+
+}
+
+.container div {
+    padding: 10px;
+    border: 2px solid #080808;
+    border-radius: 5px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.content-large {
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footer {
+    grid-column: 1/ span 3;
+}
+
+.vinyl1 {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 125px;
+}
+
+#title {
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+audio {
+    margin-top: 20px;
+    width: 250px;
+    height: 30px;
+}
+
+.container2 {
+    width: auto;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+    margin: auto;
+    background-color: rgb(32, 35, 47);
+    border-radius: 5px;
+
+}
+
+#library {
+    margin-bottom: 10px;
+}
+
+.library-vinyl {
+    height: 100px;
+    width: 100px;
+    margin-left: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.library-vinyl:hover {
+    opacity: 0.85;
+}
+
+#library-title {
+    font-size: 15px;
+}
+
+#library-artist {
+    font-size: 10px;
+}
+
+#footer2 {
+    font-size: 12px;
+}
+
+#turntable {
+    height: 150px;
+    width: 175px;
+    border-radius: 5px;
+}
+
+#speaker {
+    height: 200px;
+    width: 200px;
+    display: flex;
+}
