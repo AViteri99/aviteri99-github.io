@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    /* PROBLEM 1: Make the header stick to the top as you scroll */
+
+}
+
+.content {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    /* PROBLEM 2: Align the page content to the center of the screen */
+
+}
+
+#image-banner {
+    background-image: url('../img/sf_banner.png');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+
+#other-posts {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.image-card,
+.image-card-color-overlay {
+    width: 380px;
+    height: 200px;
+}
+
+.image-card {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    margin-right: 40px;
+    position: relative;
+    /* PROBLEM 3: Give .image-card the appropriate position type */
+
+}
+
+.image-card:last-child {
+    margin-right: 0;
+}
+
+.image-card img {
+    width: 100%;
+}
+
+.image-card-color-overlay {
+    position: absolute;
+
+    /* PROBLEM 4: Move the color overlay to cover the image properly */
+    top: 0px;
+    left: 0px;
+    /* PROBLEM 5: What should the opacity be when there is no hover? */
+    opacity: 0;
+    transition: 0.3s;
+    background-color: navy;
+}
+
+.image-card:hover .image-card-color-overlay {
+    /* PROBLEM 5: Pick an opacity for the blue hover effect */
+    opacity: 0.45;
+}
+
+.image-card-text {
+    position: absolute;
+    /* PROBLEM 6: Similar to .image-card-cover-overlay, position the card text */
+    bottom: 20px;
+    left: 10px;
+    color: white;
+    font-family: 'Raleway', serif;
+}
+
+
+/* PROBLEM 7: Improve the typography and colors of this page! */
+
+#title {
+    font-family: 'Raleway', serif;
+    font-size: 25px;
+    font-weight: 2px;
+    color: rgb(68, 68, 104);
+    margin: 10px;
+}
+
+h1 {
+    font-family: 'Raleway', serif;
+    font-size: 20px;
+    color: rgb(68, 68, 104);
+
+}
+
+h2 {
+    font-family: 'Raleway', serif;
+    font-size: 15px;
+    color: rgb(68, 68, 104);
+
+}
+
+h3 {
+    font-family: 'Raleway', serif;
+    font-size: 14px;
+
+}
+
+p {
+    font-family: 'Raleway', serif;
+}
