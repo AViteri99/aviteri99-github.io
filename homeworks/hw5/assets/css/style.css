@@ -1,0 +1,124 @@
+.nav {
+    width: 85px;
+    /* [Problem 1] 
+        FIXME: Set the width of the nav class to 85px. */
+
+}
+
+.nav--button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato";
+    /*  [Problem 2]
+        FIXME: Initialize flexbox vertically. Align the text and icons so that they
+        are center aligned. */
+
+}
+
+.dashboard {
+    padding: 15px;
+    /*  [Problem 3]
+        FIXME: Add some breathing room! The dashboard portion is a bit tight! 
+        (Hint: use padding!) */
+
+}
+
+.dashboard--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*  [Problem 4]
+        FIXME: Use flex to add the correct spacing between the "Dashboard" text and
+        the three dot button icon that you added previously. Align them to the 
+        center of each item. */
+
+}
+
+.dashboard--classes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+    /*  [Problem 5]
+        FIXME: Use flexbox to make the classes tabs wrap in a 3x2 setup.
+        Use flexbox to create equal spacing between each box. */
+
+}
+
+.dashboard--classes__box {
+    width: 31.5%;
+    margin-bottom: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    /*  [Problem 6]
+        FIXME: Set the widths of each class tab to be 31.5% of the width;
+        
+        [Problem 7]
+        FIXME: Add 35px to the space under each box. (Choose carefully!) */
+
+
+}
+
+/*  [Problem 8]
+    FIXME: when the dashboard--classes__box class is hovered over, add a
+	darker shadow around the edges of the class tab, just like the real
+	bcourses interface. Use this: 0 4px 10px rgba(0,0,0,0.35)
+
+	Write your own class identifier. */
+.dashboard--classes__box:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+
+.dashboard--classes__box__image {
+    border-radius: 5px 5px 0px 0px;
+    /*  [Problem 9]
+        FIXME: The class tab should have a border-radius of 5px along the top
+    	of the boxes. 
+
+    	(Hint: Make sure you only add it to the top left and top
+    	right corners. Simply put, the answer is NOT border-radius: 5px.) */
+
+
+}
+
+h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*  [Problem 10]
+    FIXME: When h2, h3, and h4 are hovered over, add an underline and
+    change the cursor to a pointer. Write the selectors and the styles!
+
+    Write your own class identifier. */
+
+
+
+.notifications__notifs .notifications__notifs--box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+
+    /*  [Problem 11]
+        FIXME: Turn this element into a flex element and use the correct property
+        to align the announcement icon and the text box. */
+
+
+
+}
